@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{subcat.name}}{% endblock %}
+
+{% block body %}
+
+    {% for subcat in subcat %}
+<h4>{{ subcat.name }}</h4>
+
+    <p>{{ subcat.content }}</p>
+
+    {% endfor %}
+{% endblock %}
